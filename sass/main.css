@@ -20,8 +20,8 @@ html {
 .main_header h1 {
   color: red;
   font-size: 10rem;
-  letter-spacing: 0.3rem;
-  text-transform: capitalize;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
 }
 .main_header h1:hover {
   color: white;

@@ -19,11 +19,11 @@ $bg-color: #10ac84;
     flex-direction: column;
 }
 
-@mixin commomcode {
+@mixin commomcode($par1, $par2) {
     color: red;
     font-size: 5rem + 5rem;  //100px
-    letter-spacing: .3rem;
-    text-transform: capitalize;
+    letter-spacing: $par1;
+    text-transform: $par2;
 }
 
 .main_header {
@@ -33,7 +33,8 @@ $bg-color: #10ac84;
     background-color: $bg-color;
 
     h1 {
-        @include commomcode;
+        @include commomcode(0.8rem, uppercase);
+        // letter-spacing: 5rem;
         &:hover {
             color: white;
         }
@@ -43,7 +44,7 @@ $bg-color: #10ac84;
     }
 
     p {
-        @include commomcode;
+        @include commomcode(0.3rem, capitalize);
         &:hover {
             color: blue;
         }
