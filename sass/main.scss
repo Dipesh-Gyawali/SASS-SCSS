@@ -1,3 +1,6 @@
+@import "mixin";
+@import "var";
+
 *{
     margin: 0;
     padding: 0;
@@ -10,21 +13,6 @@ html{
     font-size: 62.5%; /* yesle 1rem=10px banauxa*/
 }
 
-$bg-color: #10ac84;
-
-@mixin flexpro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-@mixin commomcode($par1, $par2) {
-    color: red;
-    font-size: 5rem + 5rem;  //100px
-    letter-spacing: $par1;
-    text-transform: $par2;
-}
 
 .main_header {
     @include flexpro;
